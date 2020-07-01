@@ -16,7 +16,7 @@ var cors = require('cors');
 //mongodb+srv://usuario:usuario@cluster0-xjruz.mongodb.net/mymerndb?retryWrites=true&w=majority
 var mongoose = require('mongoose');
 mongoose.set('useCreateIndex', true);
-mongoose.connect(mongodb+srv://usuario:usuario@cluster0-xjruz.mongodb.net/mymerndb?retryWrites=true&w=majority', { useNewUrlParser: true })
+mongoose.connect('mongodb+srv://usuario:usuario@cluster0-xjruz.mongodb.net/mymerndb?retryWrites=true&w=majority', { useNewUrlParser: true })
     .then(() =>  console.log('mymerndb connection successful'))
     .catch((err) => console.error(err));
 

@@ -13,10 +13,10 @@ var cors = require('cors');
 
 //app.use(express.json());    //No es necesario
 //app.use(express.urlencoded({ extended: false }));  //No es necesario
-
+//mongodb+srv://usuario:usuario@cluster0-xjruz.mongodb.net/mymerndb?retryWrites=true&w=majority
 var mongoose = require('mongoose');
 mongoose.set('useCreateIndex', true);
-mongoose.connect('mongodb+srv://jesus:CursoMERN2019@cluster0-40okh.mongodb.net/mymerndb?retryWrites=true', { useNewUrlParser: true })
+mongoose.connect(mongodb+srv://usuario:usuario@cluster0-xjruz.mongodb.net/mymerndb?retryWrites=true&w=majority', { useNewUrlParser: true })
     .then(() =>  console.log('mymerndb connection successful'))
     .catch((err) => console.error(err));
 
